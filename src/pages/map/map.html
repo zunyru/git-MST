@@ -1,0 +1,264 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>สาย {{data.rol}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg-map">
+  <!-- map -->
+  <div class="titil-apps"><h3>แผนที่ระบบขนส่งสาธารณะ</h3><h1>มหาสารคาม</h1></div>
+  <div class="bg-img-map">
+    <img src="./assets/imgs/thum_{{data.map}}" (click)="presentModal(data.map,data.rol)">
+    <h6 class="t1">MAHASARAKHAM</h6>
+    <h6 class="t2">SMART TRANSIT</h6>
+  </div>
+
+  <ion-row>
+    <ion-col col-12 class="col-data">
+        <!--Box -->
+      <ion-row>
+        <div *ngIf="data.rol != '4660'" class="box-name">
+          <ion-row>
+            <ion-col col-4 class="col-number div-center">
+               <h1 class="b0">{{data.rol}} |</h1>
+            </ion-col>
+            <ion-col col-8 class="div-center">
+              <ion-row class="row-name-top">
+                <ion-col>
+                  <h6 class="b1">{{data.strat}}</h6>
+                </ion-col>
+              </ion-row>
+              <ion-row class="row-name-botom">
+                <ion-col>
+                   <h6 class="b2">{{data.end}}</h6>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div *ngIf="data.rol == '4660'" class="box-name">
+          <ion-row>
+            <ion-col col-7 class="col-number div-center">
+              <h1 class="b0">{{data.rol}} |</h1>
+            </ion-col>
+            <ion-col col-5 class="div-center">
+              <ion-row class="row-name-top">
+                <ion-col>
+                  <h6 class="b1">{{data.strat}}</h6>
+                </ion-col>
+              </ion-row>
+              <ion-row class="row-name-botom">
+                <ion-col>
+                  <h6 class="b2">{{data.end}}</h6>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-row>
+
+      <ion-row class="div-img-root">
+        <img class="root" src="./assets/imgs/{{data.station}}" (click)="openmapdetail(data.rol)">
+      </ion-row>
+
+      <ion-row class="div-img-route">
+        <h6 class="text-route" (click)="openmapdetail(data.rol)">ดูเส้นทางจุดจอดทั้งหมด</h6>
+        <img class="route" src="./assets/imgs/line{{data.rol}}.png" (click)="openmapdetail(data.rol)">
+      </ion-row>  
+
+      <!--landmark-->
+      <ion-row >
+        <ion-col col-6 class="box-landmark">
+          <h6 class="text-landmark">LANDMARK</h6>
+        </ion-col>
+      </ion-row>
+
+     <ion-row *ngIf="data.rol == '1'">
+       <ion-row class="mark-icon">
+       <ion-col col-4>
+        <img class="img1" src="./assets/imgs/msu.png">
+        <small class="txt1">ม.มหาสารคาม</small>
+       </ion-col>
+       <ion-col col-4>
+       <img class="img1" src="./assets/imgs/rmu.png">
+       <small class="txt1">ม.รชภัฏมหาสารคาม</small>
+       </ion-col>
+       <ion-col col-4>
+       <img class="img1" src="./assets/imgs/spl.png">
+       <small class="txt1">สถาบันการพละศึกษา</small>
+       </ion-col>
+       </ion-row>
+
+       <ion-row class="mark-icon">
+       <ion-col col-4>
+       <img class="img1" src="./assets/imgs/market.png">
+       <small class="txt1">ตลาด</small>
+       </ion-col>
+       <ion-col col-4>
+       <img class="img1" src="./assets/imgs/shpping.png">
+       <small class="txt1">ห้างสรรพสินค้า</small>
+       </ion-col>
+       <ion-col col-4>
+       <img class="img1" src="./assets/imgs/polic.png">
+       <small class="txt1">สถานีตำรวจ</small>
+       </ion-col>
+       </ion-row>
+
+       <ion-row class="mark-icon">
+       <ion-col col-4>
+       <img class="img1" src="./assets/imgs/hotel.png">
+       <small class="txt1">โรงพยาบาล</small>
+       </ion-col>
+       <ion-col col-4>
+       <img class="img1" src="./assets/imgs/sala.png">
+       <small class="txt1">ศาลากลาง</small>
+       </ion-col>
+       <ion-col col-4>
+       <img class="img1" src="./assets/imgs/collt.png">
+       <small class="txt1">วิทยาลัย</small>
+       </ion-col>
+       </ion-row>
+
+       <ion-row class="mark-icon">
+       <ion-col col-4>
+       <img class="img1" src="./assets/imgs/clock.png">
+       <small class="txt1">หอนาฬิกา</small>
+       </ion-col>
+       <ion-col col-4>
+       <img class="img1" src="./assets/imgs/lakmeang.png">
+       <small class="txt1">ศาลเจ้าพ่อหลักเมือง</small>
+       </ion-col>
+       <ion-col col-4>
+       </ion-col>
+       </ion-row>
+     </ion-row>
+
+      <!-- 3 -->
+      <ion-row *ngIf="data.rol == '3'">
+        <ion-row class="mark-icon">
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/msu.png">
+            <small class="txt1">ม.มหาสารคาม</small>
+          </ion-col>
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/rmu.png">
+            <small class="txt1">ม.รชภัฏมหาสารคาม</small>
+          </ion-col>
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/polic.png">
+            <small class="txt1">สถานีตำรวจ</small>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="mark-icon">
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/market.png">
+            <small class="txt1">ตลาด</small>
+          </ion-col>
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/collt.png">
+            <small class="txt1">วิทยาลัย</small>
+          </ion-col>
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/clock.png">
+            <small class="txt1">หอนาฬิกา</small>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="mark-icon">
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/sala.png">
+            <small class="txt1">ศาลากลาง</small>
+          </ion-col>
+          <ion-col col-4>
+
+          </ion-col>
+          <ion-col col-4>
+          </ion-col>
+        </ion-row>
+      </ion-row>
+
+      <!--4-->
+      <ion-row *ngIf="data.rol == '4'">
+        <ion-row class="mark-icon">
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/msu.png">
+            <small class="txt1">ม.มหาสารคาม</small>
+          </ion-col>
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/rmu.png">
+            <small class="txt1">ม.รชภัฏมหาสารคาม</small>
+          </ion-col>
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/spl.png">
+            <small class="txt1">สถาบันการพละศึกษา</small>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="mark-icon">
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/shpping.png">
+            <small class="txt1">ห้างสรรพสินค้า</small>
+          </ion-col>
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/hotel.png">
+            <small class="txt1">โรงพยาบาล</small>
+          </ion-col>
+          <ion-col col-4>
+          </ion-col>
+        </ion-row>
+      </ion-row>
+
+      <!--4660-->
+      <ion-row *ngIf="data.rol == '4660'">
+        <ion-row class="mark-icon">
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/msu.png">
+            <small class="txt1">ม.มหาสารคาม</small>
+          </ion-col>
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/lakmeang.png">
+            <small class="txt1">ศาลเจ้าพ่อหลักเมือง</small>
+          </ion-col>
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/collt.png">
+            <small class="txt1">วิทยาลัย</small>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="mark-icon">
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/sala.png">
+            <small class="txt1">ศาลากลาง</small>
+          </ion-col>
+          <ion-col col-4>
+            <img class="img1" src="./assets/imgs/clock.png">
+            <small class="txt1">หอนาฬิกา</small>
+          </ion-col>
+          <ion-col col-4>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="mark-icon">
+          <ion-col col-8>
+            <img class="img1" src="./assets/imgs/meeting.png">
+            <small class="txt1">ศูนย์ประชุมมหาวิทยาลัยมหาสารคาม</small>
+          </ion-col>
+          <ion-col col-4>
+
+          </ion-col>
+        </ion-row>
+      </ion-row>
+
+
+    </ion-col>
+
+
+  </ion-row>
+
+</ion-content>

@@ -1,0 +1,86 @@
+page-bus {
+  background-color: #343434;
+}
+ion-content.bg-bus{
+  background-color: #343434;
+}
+
+.bus-grid{
+  background-color: #ffd700;
+  padding: 20px;
+  margin-top: 20px;
+}
+h1.price-big{
+  font-size: 100px;
+  font-weight: bolder;
+  color: #343434;
+  padding-bottom: 0;
+  margin-bottom: -13px;
+  text-align: center;
+}
+.titel-price{
+  position: absolute;
+  font-weight: 600;
+  top:23px;
+  left: 0;
+}
+.titel-time{
+  //position: absolute;
+  font-weight: bolder;
+  left: 0;
+  font-size: 30px;
+}
+.fare{
+  right: 0;
+  position: absolute;
+  color: #343434;
+  font-weight: 600;
+  bottom: 0;
+}
+.allway{
+  position: absolute;
+  top:30px;
+  left: 0;
+}
+.bath-th{
+  position: absolute;
+  position: absolute;
+  font-size: 24px;
+  top: 24px;
+  left: 0;
+}
+.bath-en{
+  color: #343434;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bus-grid2 {
+  background-color: #ffd700;
+  padding: 20px;
+  margin-top: 5px;
+  padding-top: 0;
+  height: 140px;
+}
+.titel-table{
+
+}
+.time{
+  top: 48px;
+  font-weight: bold;
+  color: #343434;
+}
+.img-min{
+  position: absolute;
+  width: 60px;
+  bottom: 35px;
+  right: 0;
+}
+.text-time{
+  right: 0;
+  position: absolute;
+  top: -18px;
+  bottom: 0px;
+}

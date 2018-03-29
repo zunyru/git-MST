@@ -1,0 +1,23 @@
+page-modal {
+ 
+}
+
+.wide-as-needed {
+  overflow: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.scroll { 
+  min-width: 100%;
+  min-height: 100%;
+}
+
+img.big {
+    max-width: none;
+    max-height: none;
+}
+
+ion-scroll .scroll-content{
+ overflow : auto;
+}

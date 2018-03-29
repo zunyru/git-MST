@@ -1,0 +1,8 @@
+{
+  "name": "AppSMT",
+  "app_id": "0df2d92d",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <span>เส้นทางการเดินรถ</span>
+      <button class="lang">TH</button>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-list">
+  <div  padding>
+  
+  </div>
+  <div  padding>
+  
+  </div>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <img class="icon-list" src="./assets/imgs/iconlst.png">
+      <span class="span-list">สาย {{item.rol}}</span>
+      <div class="item-note" item-end>
+        {{item.title}}
+      </div>
+    </button>
+  </ion-list>
+  
+</ion-content>

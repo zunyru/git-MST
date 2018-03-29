@@ -1,0 +1,22 @@
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>
+			<span>ตารางเวลา สาย {{data.rol}}</span>
+			<button class="lang">TH</button>
+		</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="bg-timerdetail" (click)="itemTapped($event, data)">
+
+	<h4 class="text-timer">สายที่ {{data.rol}} {{data.title}}</h4>
+
+	<img class="" src="./assets/imgs/line{{data.rol}}.png">
+
+	<h4 class="text-timer">05.50 น. - 18.00 น.</h4>
+	<h4 class="text-timer">รถออกทุกๆ 10 นาที</h4>
+
+
+</ion-content>

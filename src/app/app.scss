@@ -1,0 +1,201 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+@font-face {
+  font-family: "Sukhumvit";
+  src: local("☺"), url("../assets/fonts/sukhumvitset-text.woff2") format("woff2"), url("../assets/fonts/sukhumvitset-text.ttf") format("truetype"), url("../assets/fonts/sukhumvitset-text.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+ion-app{
+  font-family: "Sukhumvit";
+  &.ios, &.md{
+    font-family: -apple-system, "Sukhumvit", "Sukhumvit", sans-serif;
+    font-size: 1.4rem;
+    background-color: #fff;
+  }
+}
+
+.item {
+  color: gold;
+  &.item-md{
+    font-size: 12pt;
+  }
+  &.item-ios{
+    font-size: 14pt;
+  }
+}
+
+.toolbar-background {
+  background-color: gold;
+}
+
+.content-menu.content {
+  background-color: #343434;
+}
+
+.bg-logo {
+  padding: 15px;
+  padding-bottom: 40px;
+  background-color: #343434;
+}
+
+.item.item-block {
+  background-color: #343434;
+}
+
+.list-md .item-block .item-inner {
+  background-color: #343434;
+}
+
+.list-md .item-block .item-inner {
+  border-bottom: 1px solid #343434;
+}
+
+span.button-inner {
+    color: #343434;
+}
+
+.item-logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  margin: auto;
+  width: 35px;
+  height: 30px;
+}
+
+span.text-menu {
+  position: absolute;
+  top: 11px;
+  left: 60px;
+}
+
+.list-ios > .item-block:first-child {
+  border-top: 0.55px solid #343434;
+}
+
+.list-ios .item-block .item-inner {
+  border-bottom: 0.55px solid #343434;
+}
+
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+  border-bottom: 0.55px solid #343434;
+}
+
+.item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+  background-image: none;
+}
+
+
+.logo-header {
+  width: 75%;
+  margin-top: 10px;
+}
+
+.lang {
+  background-color: transparent;
+  font-size: 18px;
+  color: #424143;
+  position: absolute;
+  right: 0;
+  top: 26%;
+}
+
+.icon-list {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  margin: auto;
+  width: 35px;
+  height: 30px;
+}
+
+span.span-list {
+  position: absolute;
+  left: 55px;
+  top: 10px;
+}
+
+ion-app {
+  font-family: "Sukhumvit";
+}
+.item{
+  color: gold;
+  font-size: 14pt;
+}
+.toolbar-background {
+  background-color: gold;
+}
+.content-menu.content{
+  background-color: #343434;
+}
+.bg-logo{
+  padding: 15px;
+  padding-bottom: 40px;
+  background-color: #343434;
+}
+.item.item-block{
+  background-color: #343434;
+}
+.list-md .item-block .item-inner{
+  background-color: #343434;
+}
+.list-md .item-block .item-inner {
+  border-bottom: 1px solid #343434;
+}
+.activeHighligh{
+  background-color: map_get($colors,mycolor);
+}
+.item-logo{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  margin: auto;
+  width: 35px;
+  height: 30px;
+}
+span.text-menu {
+  position: absolute;
+  top: 11px;
+  left: 60px;
+}
+.list-ios > .item-block:first-child {
+  border-top: 0.55px solid #343434;
+}
+.list-ios .item-block .item-inner {
+  border-bottom: 0.55px solid #343434;
+}
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+  border-bottom: 0.55px solid #343434;
+}
+.item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+  background-image: none;
+}
+
+.content.content-menu.content-ios{
+  background-color: #343434;
+}
+button.item.item-block.item-ios.activeHighligh {
+  background-color: #222;
+}
+.toolbar-content.toolbar-content-md {
+  text-align: -webkit-center;
+}
